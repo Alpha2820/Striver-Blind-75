@@ -10,7 +10,8 @@ public class MaximumSubArray {
       sum = sum + nums[i];
       if (sum > max) {
         max = sum;
-      } else {
+      }
+      if (sum < 0) {
         sum = 0;
       }
     }
